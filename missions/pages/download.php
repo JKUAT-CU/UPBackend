@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 if (isset($_SESSION['user_id'])) {
     $user_id = $_SESSION['user_id'];
     // Query to fetch image URL from the user table
-    $sql = "SELECT images FROM makueni WHERE member_id = $user_id";
+    $sql = "SELECT images FROM UP WHERE id = $user_id";
 
     $result = $conn->query($sql);
 
@@ -31,7 +31,7 @@ if (isset($_SESSION['user_id'])) {
     }
 } else {
     echo "User ID not set in session";
-    header("Location: signin.php"); // Redirect to signin.php if user ID is not set
+    header("Location: login.php"); // Redirect to signin.php if user ID is not set
     exit();
 }
 
