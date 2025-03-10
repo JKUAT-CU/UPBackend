@@ -65,7 +65,7 @@ $conn->close();
                 </div>
 
                 <!-- Download Button -->
-                <a class="btn btn-primary mt-3 downloadButton" href="<?php echo $image_url; ?>" download="makueniproforma.jpg">
+                <a class="btn btn-primary mt-3 downloadButton" href="<?php echo $image_url; ?>" download="UPproforma.jpg">
                     Download Proforma
                 </a>
                         <!-- Change Image Button -->
