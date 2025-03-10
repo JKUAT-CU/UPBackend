@@ -82,7 +82,7 @@ $uploadedImageWidth = imagesx($uploadedImage);
 $uploadedImageHeight = imagesy($uploadedImage);
 
 // **Step 1: Enlarge Image by 10%**
-$scaleFactor = 1.;
+$scaleFactor = 1.6;
 $newWidth = intval($uploadedImageWidth * $scaleFactor);
 $newHeight = intval($uploadedImageHeight * $scaleFactor);
 
