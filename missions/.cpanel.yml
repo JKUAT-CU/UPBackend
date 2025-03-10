@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jkuatcu/finance/
+    - /bin/bash deploy.sh

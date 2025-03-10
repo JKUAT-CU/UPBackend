@@ -1,0 +1,9 @@
+<img id="image" src="UP.png" style="max-width:100%;">
+<p id="coords">Click on the image to get coordinates.</p>
+<script>
+  document.getElementById("image").addEventListener("click", function(event) {
+      let x = event.offsetX;
+      let y = event.offsetY;
+      document.getElementById("coords").innerText = "X: " + x + ", Y: " + y;
+  });
+</script>

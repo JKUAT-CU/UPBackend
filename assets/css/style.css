@@ -1,0 +1,300 @@
+/* Import Futura font */
+@font-face {
+    font-family: 'Futura';
+    src: url('https://cdn.jsdelivr.net/npm/futura-font@1.0.0/styles.min.css');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: white;
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.5vw; /* Dynamic font size based on viewport width */
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f7a306;
+    position: fixed;
+    top: 7vh; /* Adjusted using viewport height */
+    left: 0;
+    height: calc(100vh - 7vh); /* Full height minus topnav height */
+    width: 20vw; /* Sidebar width */
+    z-index: 1000;
+    padding-top: 1vh;
+    font-family: 'Futura', sans-serif;
+}
+
+/* Top navigation bar styling */
+.topnav {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7vh; /* Adjusted using viewport height */
+    background-color: #800000;
+    z-index: 1050;
+}
+
+/* Main content styling */
+.content {
+    margin-left: 21vw; /* Margin for the left sidebar */
+    margin-right: 0; /* Removed right margin since no sidebar exists */
+    padding-top: 17vh; /* Padding to clear the top bar */
+    padding-right: 2vw;
+    padding-bottom: 2vw;
+    margin-right:3vh;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    width: calc(100% - 21vw); /* Expand to use the full width minus the sidebar */
+}
+
+
+/* Container fluid adjustments */
+.container-fluid {
+    margin-top: 1vh;
+    margin-left: 3vw;
+    padding: 0;
+}
+.profile-card-container{
+    left: 20vw;
+    right: 0;
+
+}
+main {
+    padding: 2vw; /* Padding for the main content */
+    overflow-x: hidden;
+}
+
+h1, p {
+    margin: 0;
+}
+
+/* Optional: Adjust the select area */
+.select-area {
+    background: #fff;
+    border-radius: 0.8vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+    padding: 2vw;
+}
+
+.select-area select {
+    height: 30vh; /* Dynamic height for select box */
+    overflow-y: auto;
+}
+
+/* Profile Card Container */
+#profileCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1vw; /* Adjust the gap between cards */
+    padding-right: 1vw;
+    padding-left: 1vw;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    flex: 1 1 calc(33.33% - 2vw); /* Ensure 3 cards per row by setting width to ~33.33% */
+    max-width: 33.33vw; /* Set maximum width to 33.33% of the viewport width */
+    background-color: white;
+    border-radius: 1vw;
+    padding: 1.5vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 3vh;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.profile-card:hover {
+    box-shadow: 0 0.8vw 1.6vw rgba(0, 0, 0, 0.2);
+}
+
+.profile-card img {
+    width: 100%; /* Fully responsive image width */
+    height: 20vh; /* Adjust height as necessary */
+    object-fit: cover;
+    border-radius: 10%;
+    margin-bottom: 1vh;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .profile-card {
+        flex: 1 1 calc(50% - 2vw); /* 2 cards per row on medium/smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .profile-card {
+        flex: 1 1 calc(100% - 2vw); /* 1 card per row on extra small screens */
+    }
+}
+
+
+.profile-card p {
+    margin: 0.5vh 0;
+    font-size: .9rem;
+}
+.profile-card h5 {
+    margin: 0.5vh 0;
+    font-size: 1.1rem;
+}
+.text-white{
+font-size: 0.6rem ;
+}
+#chairpersonButton{
+    font-size: .7rem;
+}
+
+/* Declaration Styling */
+.declaration {
+    background-color: #ffffff;
+    border: 0.1vw solid #ccc;
+    border-radius: 1vw;
+    padding: 2vw;
+    box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.1);
+    max-width: 60vw;
+    margin: 2vh auto;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+/* Headings */
+.declaration h2, .declaration h3, .declaration h4 {
+    color: #003366;
+    margin-top: 0;
+}
+
+.declaration h2 {
+    font-size: 2.6vw;
+    border-bottom: 0.3vw solid #003366;
+    padding-bottom: 1vh;
+}
+
+.declaration h3 {
+    font-size: 2.2vw;
+    margin-top: 2vh;
+}
+
+.declaration h4 {
+    font-size: 1.8vw;
+    margin-top: 1.5vh;
+}
+
+/* Paragraphs and Lists */
+.declaration p {
+    margin-bottom: 1.5vh;
+}
+
+.declaration ul {
+    margin-left: 2vw;
+    margin-bottom: 1.5vh;
+}
+
+.declaration ul li {
+    margin-bottom: 0.8vh;
+    line-height: 1.6;
+}
+
+/* Confirmation Button */
+.confirmation-button {
+    display: block;
+    width: 100%;
+    padding: 1.2vh;
+    margin: 2vh 0;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5vw;
+    font-size: 1.6vw;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.confirmation-button:hover {
+    background-color: #0056b3;
+}
+
+/* Top Profile Bar */
+.top-profile-bar {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(173, 110, 27); /* White background */
+    padding: 1vh 2vw; /* Padding around the top profile bar */
+    position: fixed;
+    width:79vw;
+    top: 7vh; /* Right below the topnav */
+    left: 20vw;
+    right: 0;
+    height:20vh; /* Dynamic height for the top section */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for separation */
+    overflow-x: auto; /* Horizontal scrolling for smaller screens */
+}
+#nomineeSection {
+    margin-top: 15vh; /* Adjust this to provide enough space for the top bar */
+}
+/* Selected Profile Cards Container */
+.selected-profile-card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw; /* Space between profile cards */
+    overflow-x: auto; /* Enable scrolling horizontally */
+}
+
+/* Circular Profile Cards - Smaller Size */
+.selected-profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10vw; /* Reduced size by 3/4 */
+    height: 10vh;
+    border: 1px solid #ff7300; /* Narrow border */
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-right: 0.75vw; /* Reduced space between the cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.selected-profile-card img {
+    width: 70%;
+    height: 500%;
+    border-radius: 50%; /* Circular image */
+}
+
+.selected-profile-card {
+    font-size: 1vw; /* Small font size for profile name */
+    margin: 0.5vh 0 0; /* Small margin below the name */
+    text-align: center;
+}
+
+/* Confirm Button */
+.submit-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#submitBtn {
+    padding: 1vh 2vw;
+    font-size: 1.2vw;
+}
+
+/* Disabled button styling */
+.btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+}

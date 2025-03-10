@@ -1,0 +1,24 @@
+Success: {
+                    "requestId":"3fec-4d4e-8899-f6343499627445945276",
+                    "errorCode": "500.003.1001",
+                    "errorMessage": "URLs are already registered"
+                }
+            
+Success: {
+                    "requestId":"b31f-4564-95fc-12ecddde605b52279930",
+                    "errorCode": "500.003.1001",
+                    "errorMessage": "URLs are already registered"
+                }
+            
+Success: {
+                    "requestId":"b142-4f5f-b5fc-6567c8885b4c77657366",
+                    "errorCode": "500.003.1001",
+                    "errorMessage": "URLs are already registered"
+                }
+            
+Success: {
+                    "requestId":"d5f6-4248-abac-c6b110aa939c15296025",
+                    "errorCode": "500.003.1001",
+                    "errorMessage": "URLs are already registered"
+                }
+            
